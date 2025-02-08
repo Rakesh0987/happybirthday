@@ -24,7 +24,7 @@ function showWish(type) {
     } else if (type === 'wish2') {
         wishText = "You're not getting older, you're just becoming a classic! 😂";
     } else if (type === 'wish3') {
-        wishText = "May your year be filled with joy and happiness! ❤️";
+        wishText = "Once again happy birthday sakshi jha May your year be filled with joy and happiness! ❤️";
     }
     
     document.getElementById('wish-output').innerText = wishText;
