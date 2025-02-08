@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday, [Name]!</h1>
+        <img src="birthdaycake.png" alt="Birthday Cake" class="birthday-image">
+        
+        <div class="wish-buttons">
+            <button onclick="showWish('wish1')">Sweet Wishes</button>
+            <button onclick="showWish('wish2')">Funny Wishes</button>
+            <button onclick="showWish('wish3')">Heartfelt Wishes</button>
+        </div>
+
+        <div id="wish-output" class="wish-output"></div>
+
+        <div id="question-section" class="question-section" style="display: none;">
+            <p id="question-text"></p>
+            <button onclick="answerQuestion('yes')">Yes</button>
+            <button onclick="answerQuestion('no')">No</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
