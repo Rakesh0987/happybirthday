@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: url('birthday-bg.jpg'); /* Add a festive background image */
+    background-image: url('birthday-bg.jpg'); /* Add a festive background image */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
