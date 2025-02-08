@@ -1,7 +1,7 @@
 function showWish(type) {
     let wishText = '';
     if (type === 'wish1') {
-        wishText = "Wishing you a day filled with love and cheer! 🎉";
+        wishText = "Wishing you a day filled with love and cheer! May god bless you and fulfil your all wishes🎉";
     } else if (type === 'wish2') {
         wishText = "You're not getting older, you're just becoming a classic! 😂";
     } else if (type === 'wish3') {
@@ -26,9 +26,9 @@ function askQuestion() {
 
 function answerQuestion(answer) {
     if (answer === 'yes') {
-        alert("Yay! That's what we love to hear! 🎈");
+        alert("Awww! That's what I love to hear! 🎈");
     } else {
-        alert("Don't worry, we're here to make it special! 💖");
+        alert("Don't worry, I am here to make it special! 💖");
     }
     document.getElementById('question-section').style.display = 'none';
     document.getElementById('wish-output').innerText = ''; // Clear the wish output
