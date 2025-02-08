@@ -1,3 +1,22 @@
+document.addEventListener("DOMContentLoaded", function () {
+    launchBalloons(); // Call balloon function when page loads
+});
+
+function launchBalloons() {
+    const balloonContainer = document.createElement("div");
+    balloonContainer.classList.add("balloons");
+
+    for (let i = 0; i < 8; i++) {
+        const balloon = document.createElement("div");
+        balloon.classList.add("balloon");
+        balloon.style.left = Math.random() * 90 + "%";
+        balloon.style.animationDuration = Math.random() * 3 + 5 + "s";
+        balloonContainer.appendChild(balloon);
+    }
+
+    document.body.appendChild(balloonContainer);
+}
+
 function showWish(type) {
     let wishText = '';
     if (type === 'wish1') {
@@ -33,17 +52,3 @@ function answerQuestion(answer) {
     document.getElementById('question-section').style.display = 'none';
     document.getElementById('wish-output').innerText = ''; // Clear the wish output
 }
-document.addEventListener("DOMContentLoaded", function () {
-    const balloonContainer = document.createElement("div");
-    balloonContainer.classList.add("balloons");
-
-    for (let i = 0; i < 8; i++) {
-        const balloon = document.createElement("div");
-        balloon.classList.add("balloon");
-        balloon.style.left = Math.random() * 90 + "%";
-        balloon.style.animationDuration = Math.random() * 3 + 5 + "s";
-        balloonContainer.appendChild(balloon);
-    }
-
-    document.body.appendChild(balloonContainer);
-});
